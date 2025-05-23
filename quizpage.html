@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Quiz Bate Burger</title>
+        <meta name="description" content="Um quiz interativo para testar seus conhecimentos!">
+        <link rel="stylesheet" href="stylebate.css">
+        <link rel="icon" href="./img/batelogo (1).jpg"/>
+    </head>
+    <body>
+        <header>
+            <h1>Quiz interativo sobre a hamburgueria</h1>
+            <p>Teste seus conhecimentos e veja qual pontuação você consegue fazer!</p>
+        </header>
+        <main>
+            <!--Introdução-->
+            <section>
+                <h2>Sobre esse quiz</h2>
+                <p><strong>Este quiz</strong> foi desenvolvido para testar seus conhecimentos sobre a loja, como <em>alguns de nossos burgers</em>, datas importantes e mais!</p>
+                <p>Você encontrará diferentes tipos de perguntas, incluindo múltipla escolha, texto e perguntas de data. <br> Desafie-se com este quiz!</p>
+                <p>Você poderá encontrar algumas perguntas bem dificeis...&#128519;</p>
+            </section>
+            <!--Pergunta 1: múltipla escolha-->
+            <section>
+                <h2>Pergunta 1: Qual foi o primeiro nome da loja ?</h2>
+                <form>
+                    <input type="radio" value="Bate Grill" id="p1a" name="pergunta1">
+                    <label for="p1a">Bate Grill</label><br>
+                    <input type="radio" value="Burger House" id="p1b" name="pergunta1">
+                    <label for="p1b">Burger House</label><br>
+                    <input type="radio" value="Buddy Burger" id="p1c" name="pergunta1">
+                    <label for="p1c">Buddy Burger</label><br>
+                    <input type="radio" value="Smash Point" id="p1d" name="pergunta1">
+                    <label for="p1d">Smash Point</label><br>
+                </form>
+            </section>
+            <!--Pergunta 2: texto-->
+            <section>
+                <h2>Pergunta 2: O slogan da Bate Burger é ___</h2>
+                <form>
+                    <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta...">
+                </form>
+            </section>
+            <!--Pergunta 3: múltipla escolha-->
+            <section>
+                <h2>Pergunta 3: O que acontece se você falar "Bate Burger" 3 vezes em frente ao espelho?</h2>
+                <form>
+                    <input type="radio" value="Um hambúrger aparece" id="p1a" name="pergunta1">
+                    <label for="p1a">Um hambúrger aparece</label><br>
+                    <input type="radio" value="O atendente surge com o cardápio" id="p1b" name="pergunta1">
+                    <label for="p1b">O atendente surge com o cardápio</label><br>
+                    <input type="radio" value="Buddy Burger" id="p1c" name="pergunta1">
+                    <label for="p1c">Nada, mas vale tentar</label><br>
+                    <input type="radio" value="Smash Point" id="p1d" name="pergunta1">
+                    <label for="p1d">Você sente mais fome</label><br>
+                </form>
+            </section>
+            <!--Pergunta 4: data-->
+            <section>
+                <h2>Pergunta 4: Em que ano a loja teve seu inicio ?</h2>
+                <form>
+                    <input type="date" id="p4" name="pergunta4">
+                </form>
+            </section>
+            <!--Pergunta 5: Seleção múltipla-->
+            <section>
+                <h2>Pergunta 5: Qual foi o primeiro burger lançado ?</h2>
+                <form>
+                    <input type="radio" id="p5a" name="pergunta5" value="Onion">
+                    <label for="p5a">Onion</label>
+                    <input type="radio" id="p5b" name="pergunta5" value="Melt">
+                    <label for="p5b">Melt</label>
+                    <input type="radio" id="p5c" name="pergunta5" value="Salad">
+                    <label for="p5c">Salad</label>
+                    <input type="radio" id="p5d" name="pergunta5" value="Veggie">
+                    <label for="p5d">Veggie</label>
+                </form>
+            </section>
+            <!--Pergunta 6: Inauguração-->
+            <section>
+                <h2>Pergunta 6: Na dia de inauguração da nova loja, qual data comemorativa é celebrada ?</h2>
+                <form>
+                    <input type="radio" value="São João" id="p1a" name="pergunta1">
+                    <label for="p1a">São João</label><br>
+                    <input type="radio" value="Dia internacional do pão" id="p1b" name="pergunta1">
+                    <label for="p1b">Dia internacional do pão</label><br>
+                    <input type="radio" value="Natal" id="p1c" name="pergunta1">
+                    <label for="p1c">Natal</label><br>
+                    <input type="radio" value="Dia internacional do Hambúrger" id="p1d" name="pergunta1">
+                    <label for="p1d">Dia internacional do Hambúrger</label><br>
+                </form>
+            </section>
+            <!--Pergunta 7: Menu suspenso-->
+            <section>
+                <h2>Pergunta 7: Selecione o Burger do mês de Fevereiro</h2>
+                <form>
+                    <select name="pergunta7" id="p7">
+                        <option value="Requeijam">Requeijam</option>
+                        <option value="Catupa Burger">Catupa Burger</option>
+                        <option value="Pork BBQ">Pork BBQ</option>
+                        <option value="Bate Fish">Bate Fish</option>
+                    </select>
+                </form>
+            </section>
+            <!--Pergunta 8: imagem-->
+            <section>
+                <h2>Pergunta 8: A imagem abaixo é referente a qual lanche ?</h2>
+                <figure>
+                    <img src="./img/big1.jpeg" alt="Imagem de um burger"><br>
+                    <figcaption>Figura 1: Imagem de um burger.</figcaption>
+                </figure>
+                <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta...">
+            </section>
+            <!--Tabela de pontuação-->
+            <section>
+                <h2>Tabela de pontuação</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Pontuação</th>
+                            <th>Avaliação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0-2</td>
+                            <td>Não desista! Cada tentativa é uma oportunidade de aprender!</td>
+                        </tr>
+                        <tr>
+                            <td>3-4</td>
+                            <td>Voce ainda precisa melhorar. Que tal estudar mais sobre programação ?</td>
+                        </tr>
+                        <tr>
+                            <td>5-7</td>
+                            <td>Bom! Seu conhecimento sobre a loja está satisfatório!</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Perfeito! Voce está muito bem informado sobre nossa loja!</td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">Boa sorte na próxima! Estude mais, para melhorar!</td>
+                            </tr>
+                        </tfoot>
+                </table>
+            </section>
+            <!--Lista de respostas-->
+            <section>
+                <h2>Verifique suas respostas</h2>
+                <details>
+                    <summary>Clique aqui para ver as respostas do quiz!</summary>
+                    <ol>
+                        <li>Buddy Burger</li>
+                        <li>Quando bate a fome de burger, já sabe, Bate Burger!</li>
+                        <li>Nada, mas vale tentar</li>
+                        <li>11/05/2021</li>
+                        <li>Salad</li>
+                        <li>Arquivo deve ter extensão .html</li>
+                        <li>Pork BBQ</li>
+                        <li>Big</li>
+                    </ol>
+                </details>
+            </section>
+            <!--Formulário de feedback-->
+            <section>
+                <h2>Nos de o seu feedback:</h2>
+                <form>
+                    <fieldset>
+                        <legend>Informações de contato</legend>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="comments">Comentários:</label><br>
+                        <textarea name="comentarios" id="comentarios" rows="4" cols="40" placeholder="Digite seus comentários aqui:"></textarea><br>
+                        <button onclick="alert('FEEDBACK ENVIADO!')">Envie o feedback!</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p class="paragrado-footer">&copy Quiz Bate Burger. Todos os direitos reservados</p>
+            <p class="paragrado-footer">Para conhecer mais sobre a loja, <a href="sobremim.html" target="_blank">clique aqui!</a></p>
+        </footer>
+    </body>
+</html>
