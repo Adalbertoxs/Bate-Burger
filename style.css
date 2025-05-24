@@ -62,6 +62,61 @@ section {
     font-size: 2rem;
 }
 
+/* ESTILO DO MENU MOBILE */
+
+.btn-abrir-menu i{
+    color: #FF9E00;
+    font-size: 40px;
+}
+
+.menu-mobile{
+    background-color: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar fechari{
+    color: #FF9E00;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 300;
+    padding: 40px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #FF9E00;
+    color: #000;
+}
+
+.overlay-menu{
+    background-color: #000000ba;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
 .icons img {
     margin: 1rem;
     cursor: pointer;
@@ -110,12 +165,12 @@ section {
      3px -3px 0 #000,
     -3px  3px 0 #000,
      3px  3px 0 #000;
-    font-size: 6rem;
+    font-size: 3rem;
 }
 
 .content p {
     color: aliceblue;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     font-weight: 900;
     line-height: 1.8;
     padding: 1rem 0;
@@ -151,7 +206,7 @@ section {
 }
 
 .about .row .content h3 {
-    font-size: 3rem;
+    font-size: 1rem;
     color: #fff;
 }
 
@@ -276,5 +331,70 @@ section {
 }
 
 .footer .share img:hover {
-    background-color: var(--main-color);
+    background-color: #fff;
 }
+
+@media screen and (max-width: 1020px) {
+
+    /* Logo */
+
+    .logo-top{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Classes Gerais */
+
+    .content{
+        flex-direction: column;
+    }
+
+    /* Cabeçalho */
+
+    .navbar, .icons{
+        display: none;
+    }
+
+        /* About Img */
+
+    .row{
+        flex-direction: column;
+    }
+
+
+    .btn{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .box-container{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .content{
+        padding-top: 200px;
+        text-align: center;
+        display: block;
+    }
+
+    .content p{
+        font-size: 105%;
+    }
+
+
+    /* Botão Quiz */
+
+    .cbtn{
+        display: flex;
+        align-items: center;
+        height: 10vh;
+        width: 75%;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
