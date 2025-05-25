@@ -12,9 +12,9 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: none;
     transition: 0.2s linear;
-    font-family: "Roboto", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -334,7 +334,7 @@ section {
     background-color: #fff;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 768px) {
 
     /* Logo */
 
@@ -381,6 +381,10 @@ section {
         display: block;
     }
 
+    .title{
+        margin-top: 7.5rem;
+    }
+
     .content p{
         font-size: 105%;
     }
@@ -391,6 +395,7 @@ section {
     .cbtn{
         display: flex;
         align-items: center;
+        justify-content: center;
         height: 10vh;
         width: 75%;
         font-size: 2rem;
